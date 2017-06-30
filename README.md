@@ -66,22 +66,22 @@ npm install coordtransform
 //国测局坐标(火星坐标,比如高德地图在用),百度坐标,wgs84坐标(谷歌国外以及绝大部分国外在线地图使用的坐标)
 var coordtransform=require('coordtransform');
 //百度经纬度坐标转国测局坐标
-var bd09togcj02=coordtransform.bd09togcj02(116.404, 39.915);
+var bd09togcj02=coordtransform.bd09togcj02(39.915, 116.404);
 //国测局坐标转百度经纬度坐标
-var gcj02tobd09=coordtransform.gcj02tobd09(116.404, 39.915);
+var gcj02tobd09=coordtransform.gcj02tobd09(39.915, 116.404);
 //wgs84转国测局坐标
-var wgs84togcj02=coordtransform.wgs84togcj02(116.404, 39.915);
+var wgs84togcj02=coordtransform.wgs84togcj02(39.915, 116.404);
 //国测局坐标转wgs84坐标
-var gcj02towgs84=coordtransform.gcj02towgs84(116.404, 39.915);
+var gcj02towgs84=coordtransform.gcj02towgs84(39.915, 116.404);
 console.log(bd09togcj02);
 console.log(gcj02tobd09);
 console.log(wgs84togcj02);
 console.log(gcj02towgs84);
 //result
-//bd09togcj02:   [ 116.39762729119315, 39.90865673957631 ]
-//gcj02tobd09:   [ 116.41036949371029, 39.92133699351021 ]
-//wgs84togcj02:  [ 116.41024449916938, 39.91640428150164 ]
-//gcj02towgs84:  [ 116.39775550083061, 39.91359571849836 ]
+//bd09togcj02:   [ 39.90865673957631, 116.39762729119315 ]
+//gcj02tobd09:   [ 39.92133699351021, 116.41036949371029 ]
+//wgs84togcj02:  [ 39.91640428150164, 116.41024449916938 ]
+//gcj02towgs84:  [ 39.91359571849836, 116.39775550083061 ]
 ```
 2 浏览器用法
 直接引用目录内的index.js，会有一个coordtransform的全局对象暴露出来，也支持用AMD加载器加载
@@ -99,22 +99,22 @@ console.log(gcj02towgs84);
 <script>
     //国测局坐标(火星坐标,比如高德地图在用),百度坐标,wgs84坐标(谷歌国外以及绝大部分国外在线地图使用的坐标)
     //百度经纬度坐标转国测局坐标
-    var bd09togcj02 = coordtransform.bd09togcj02(116.404, 39.915);
+    var bd09togcj02 = coordtransform.bd09togcj02(39.915, 116.404);
     //国测局坐标转百度经纬度坐标
-    var gcj02tobd09 = coordtransform.gcj02tobd09(116.404, 39.915);
+    var gcj02tobd09 = coordtransform.gcj02tobd09(39.915, 116.404);
     //wgs84转国测局坐标
-    var wgs84togcj02 = coordtransform.wgs84togcj02(116.404, 39.915);
+    var wgs84togcj02 = coordtransform.wgs84togcj02(39.915, 116.404);
     //国测局坐标转wgs84坐标
-    var gcj02towgs84 = coordtransform.gcj02towgs84(116.404, 39.915);
+    var gcj02towgs84 = coordtransform.gcj02towgs84(39.915, 116.404);
     console.log(bd09togcj02);
     console.log(gcj02tobd09);
     console.log(wgs84togcj02);
     console.log(gcj02towgs84);
     //result
-    //bd09togcj02:   [ 116.39762729119315, 39.90865673957631 ]
-    //gcj02tobd09:   [ 116.41036949371029, 39.92133699351021 ]
-    //wgs84togcj02:  [ 116.41024449916938, 39.91640428150164 ]
-    //gcj02towgs84:  [ 116.39775550083061, 39.91359571849836 ]
+    //bd09togcj02:   [ 39.90865673957631, 116.39762729119315 ]
+    //gcj02tobd09:   [ 39.92133699351021, 116.41036949371029 ]
+    //wgs84togcj02:  [ 39.91640428150164, 116.41024449916938 ]
+    //gcj02towgs84:  [ 39.91359571849836, 116.39775550083061 ]
 </script>
 </body>
 </html>
